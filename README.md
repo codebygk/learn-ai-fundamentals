@@ -1,7 +1,7 @@
 # Learn AI Fundamentals
 Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, LoRA and AI Agents.
 
-## Introduction
+## Contents
 - [Setup Python](/01-setup-python.md)
 - [Setup Git](/02-setup-git.md)
 - [Setup Cursor](/03-setup-cursor.md)
@@ -15,13 +15,13 @@ Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, 
 - [Parameters](/11-parameters.md)
 - [Tokens](/12-tokens.md)
 - [Context Windows](/13-context-windows.md)
+- [LLM Frameworks](/14-llm-frameworks.md)
 
 ## Projects
 - [Webpage Summarizer](https://github.com/buildergk/ai-webpage-summarizer)
 - [Webpage Brochurizer](https://github.com/buildergk/ai-webpage-brochurizer)
 - [Joker](https://github.com/buildergk/ai-joker)
-- 
 
 
 ## Credits & Sources
-Some of the concepts and approaches in this repository are inspired by [Ed Donner](https://github.com/ed-donner)'s LLM Engineering course. This repo also includes my own learnings, experiments, and implementations from various other sources.
+Inspired by Ed Donner’s LLM Engineering course, along with my own learnings and implementations.

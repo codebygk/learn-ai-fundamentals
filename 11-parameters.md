@@ -15,4 +15,4 @@ Latest Frontier Models - Undisclosed
 
 ---
 
-Previous: [Transformers](/11-parameters.md) | Next: [Tokens](/12-tokens.md)
+Previous: [Transformers](/10-transformers.md) | Next: [Tokens](/12-tokens.md)
