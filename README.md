@@ -1,4 +1,4 @@
-# Learn AI Fundamentals
+# Learn AI From Scratch
 Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, LoRA and AI Agents.
 
 ## Contents
@@ -24,4 +24,4 @@ Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, 
 
 
 ## Credits & Sources
-Inspired by Ed Donner’s LLM Engineering course, along with my own learnings and implementations.
+Inspired by Ed Donner's LLM Engineering course, along with my own learnings and implementations.

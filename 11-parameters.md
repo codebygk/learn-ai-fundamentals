@@ -3,7 +3,7 @@ Parameters are the learned numerical values that store an LLM's understanding of
 
 ## Model Parameters
 - GPT-1 - 117M
-- GPT-2 - 1.5B\
+- GPT-2 - 1.5B
 - Llama3.2 - 3B
 - Llama3.1 - 8B
 - Llama3.3 - 70B
