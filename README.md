@@ -1,4 +1,4 @@
-# Learn AI From Scratch
+# Learn AI Fundamentals
 Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, LoRA and AI Agents.
 
 ## Contents
