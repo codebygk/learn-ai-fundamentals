@@ -1,0 +1,10 @@
+.vscode/
+ollama_cache/
+__pycache__/
+projects/*/__pycache__/
+venv/
+.venv/
+output/
+logs/
+uv.lock
+.python-version

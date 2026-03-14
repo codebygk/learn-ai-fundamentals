@@ -2,25 +2,26 @@
 Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, LoRA and AI Agents.
 
 ## Contents
-- [Setup Python](/01-setup-python.md)
-- [Setup Git](/02-setup-git.md)
-- [Setup Cursor](/03-setup-cursor.md)
-- [Setup UV](/04-setup-uv.md)
-- [Setup Project](/05-setup-project.md)
-- [Setup Ollama](/06-setup-ollama.md)
-- [Setup OpenAI](/07-setup-openai.md)
-- [Models](/08-models.md)
-- [Chat Completions](/09-chat-completions-api.md)
-- [Transformers](/10-transformers.md)
-- [Parameters](/11-parameters.md)
-- [Tokens](/12-tokens.md)
-- [Context Windows](/13-context-windows.md)
-- [LLM Frameworks](/14-llm-frameworks.md)
+- [Setup Python](/docs/01-setup-python.md)
+- [Setup Git](/docs//02-setup-git.md)
+- [Setup Cursor](/docs//03-setup-cursor.md)
+- [Setup UV](/docs//04-setup-uv.md)
+- [Setup Project](/docs//05-setup-project.md)
+- [Setup Ollama](/docs//06-setup-ollama.md)
+- [Setup OpenAI](/docs//07-setup-openai.md)
+- [Models](/docs//08-models.md)
+- [Chat Completions](/docs//09-chat-completions-api.md)
+- [Transformers](/docs//10-transformers.md)
+- [Parameters](/docs//11-parameters.md)
+- [Tokens](/docs//12-tokens.md)
+- [Context Windows](/docs//13-context-windows.md)
+- [LLM Frameworks](/docs//14-llm-frameworks.md)
 
 ## Projects
-- [Webpage Summarizer](https://github.com/buildergk/ai-webpage-summarizer)
-- [Webpage Brochurizer](https://github.com/buildergk/ai-webpage-brochurizer)
-- [Joker](https://github.com/buildergk/ai-joker)
+- [Webpage Summarizer](/projects/webpage-summarizer/README.md)
+- [Webpage Brochurizer](/projects/webpage-brochurizer/README.md)
+- [Joker](/projects/joker/README.md)
+- [Adversarial Conversation](/projects/adversarial-conversation/README.md)
 
 
 ## Credits & Sources
