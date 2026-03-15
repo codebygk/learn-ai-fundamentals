@@ -57,6 +57,9 @@ markdown_extensions:
 plugins:
   - search
   - awesome-pages
+  - include-markdown
+
+docs_dir: docs
 
 extra_css:
   - assets/css/styles.css

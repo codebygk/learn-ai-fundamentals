@@ -12,7 +12,7 @@ Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, 
 
 ## Core Concepts
 - [Models](/docs/core-concepts/models.md)
-- [Chat Completions](/docs/core-concepts/chat-completions-api.md)
+- [Chat Completions](/docs/core-concepts/chat-completions.md)
 - [Transformers](/docs/core-concepts/transformers.md)
 - [Parameters](/docs/core-concepts/parameters.md)
 - [Tokens](/docs/core-concepts/tokens.md)
@@ -20,10 +20,10 @@ Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, 
 - [LLM Frameworks](/docs/core-concepts/llm-frameworks.md)
 
 ## Projects
-- [Webpage Summarizer](/docs/projects/webpage-summarizer/README.md)
-- [Webpage Brochurizer](/docs/projects/webpage-brochurizer/README.md)
-- [Joker](/docs/projects/joker/README.md)
-- [Adversarial Conversation](/docs/projects/adversarial-conversation/README.md)
+- [Webpage Summarizer](/projects/webpage-summarizer/README.md)
+- [Webpage Brochurizer](/projects/webpage-brochurizer/README.md)
+- [Joker](/projects/joker/README.md)
+- [Adversarial Conversation](/projects/adversarial-conversation/README.md)
 
 
 ## Credits & Sources

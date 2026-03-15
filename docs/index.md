@@ -40,9 +40,6 @@ Understand how LLMs work under the hood.
 
 ## Projects
 
-Build real apps with what you've learned.
-
-- [Webpage Summarizer](projects/webpage-summarizer/README.md)
-- [Webpage Brochurizer](projects/webpage-brochurizer/README.md)
-- [Joker](projects/joker/README.md)
-- [Adversarial Conversation](projects/adversarial-conversation/README.md)
+{%
+  include-markdown "projects/projects.md"
+%}

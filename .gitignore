@@ -9,3 +9,4 @@ logs/
 uv.lock
 .python-version
 site/
+.env
