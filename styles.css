@@ -1,0 +1,10 @@
+.md-tabs__list {
+  display: inline-flex !important;
+  flex-wrap: nowrap !important;
+}
+
+nav .md-grid  {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  overflow-x: auto;
+}
