@@ -74,8 +74,8 @@ MIT License – free to use and modify.
 
 ## 👨‍💻 Author
 
-**Gopalakrishnan Panchavarnam (@BuilderGK)**  
+**Gopalakrishnan (@CodeByGK)**  
 Helping QA engineers go beyond testing.
 
-Website: https://buildergk.vercel.app  
-GitHub: https://github.com/buildergk
+Website: https://codebygk.vercel.app  
+GitHub: https://github.com/codebygk
