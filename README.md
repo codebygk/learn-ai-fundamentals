@@ -1,27 +1,29 @@
 # Learn AI Fundamentals
 Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, LoRA and AI Agents.
 
-## Contents
-- [Setup Python](/docs/01-setup-python.md)
-- [Setup Git](/docs/02-setup-git.md)
-- [Setup Cursor](/docs/03-setup-cursor.md)
-- [Setup UV](/docs/04-setup-uv.md)
-- [Setup Project](/docs/05-setup-project.md)
-- [Setup Ollama](/docs/06-setup-ollama.md)
-- [Setup OpenAI](/docs/07-setup-openai.md)
-- [Models](/docs/08-models.md)
-- [Chat Completions](/docs/09-chat-completions-api.md)
-- [Transformers](/docs/10-transformers.md)
-- [Parameters](/docs/11-parameters.md)
-- [Tokens](/docs/12-tokens.md)
-- [Context Windows](/docs/13-context-windows.md)
-- [LLM Frameworks](/docs/14-llm-frameworks.md)
+## Setup
+- [Setup Python](/docs/setup/setup-python.md)
+- [Setup Git](/docs/setup/setup-git.md)
+- [Setup Cursor](/docs/setup/setup-cursor.md)
+- [Setup UV](/docs/setup/setup-uv.md)
+- [Setup Project](/docs/setup/setup-project.md)
+- [Setup Ollama](/docs/setup/setup-ollama.md)
+- [Setup OpenAI](/docs/setup/setup-openai.md)
+
+## Core Concepts
+- [Models](/docs/core-concepts/models.md)
+- [Chat Completions](/docs/core-concepts/chat-completions-api.md)
+- [Transformers](/docs/core-concepts/transformers.md)
+- [Parameters](/docs/core-concepts/parameters.md)
+- [Tokens](/docs/core-concepts/tokens.md)
+- [Context Windows](/docs/core-concepts/context-windows.md)
+- [LLM Frameworks](/docs/core-concepts/llm-frameworks.md)
 
 ## Projects
-- [Webpage Summarizer](/projects/webpage-summarizer/README.md)
-- [Webpage Brochurizer](/projects/webpage-brochurizer/README.md)
-- [Joker](/projects/joker/README.md)
-- [Adversarial Conversation](/projects/adversarial-conversation/README.md)
+- [Webpage Summarizer](/docs/projects/webpage-summarizer/README.md)
+- [Webpage Brochurizer](/docs/projects/webpage-brochurizer/README.md)
+- [Joker](/docs/projects/joker/README.md)
+- [Adversarial Conversation](/docs/projects/adversarial-conversation/README.md)
 
 
 ## Credits & Sources
