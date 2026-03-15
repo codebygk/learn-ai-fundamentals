@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/08-models/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/09-chat-completions/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/chat-completions/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/10-transformers/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/context-windows/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/11-parameters/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/llm-frameworks/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/12-tokens/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/models/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/13-context-windows/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/parameters/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/core/14-llm-frameworks/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/tokens/</loc>
+         <lastmod>2026-03-15</lastmod>
+    </url>
+    <url>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/core-concepts/transformers/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
@@ -49,31 +53,31 @@
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/01-setup-python/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-cursor/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/02-setup-git/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-git/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/03-setup-cursor/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-ollama/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/04-setup-uv/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-openai/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/05-setup-project/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-project/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/06-setup-ollama/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-python/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
     <url>
-         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/07-setup-openai/</loc>
+         <loc>https://codebygk.github.io/learn-ai-fundamentals/setup/setup-uv/</loc>
          <lastmod>2026-03-15</lastmod>
     </url>
 </urlset>

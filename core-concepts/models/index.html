@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/projects/webpage-brochurizer/">
+        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/core-concepts/models/">
       
       
-        <link rel="prev" href="../joker/">
+        <link rel="prev" href="../../setup/setup-openai/">
       
       
-        <link rel="next" href="../webpage-summarizer/">
+        <link rel="next" href="../chat-completions/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>ai-webpage-brochurizer - Learn AI Fundamentals</title>
+        <title>Models - Learn AI Fundamentals</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ai-webpage-brochurizer" class="md-skip">
+        <a href="#models" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              ai-webpage-brochurizer
+              Models
             
           </span>
         </div>
@@ -268,11 +268,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../core-concepts/models/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -288,13 +290,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../webpage-summarizer/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../projects/webpage-summarizer/" class="md-tabs__link">
           
   
   
@@ -645,26 +645,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   
@@ -682,7 +687,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -697,10 +702,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../core-concepts/models/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -716,6 +748,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closed-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closed Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-ways-to-use-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Ways to Use Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Ways to Use Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -728,7 +858,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/chat-completions/" class="md-nav__link">
+      <a href="../chat-completions/" class="md-nav__link">
         
   
   
@@ -756,7 +886,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/transformers/" class="md-nav__link">
+      <a href="../transformers/" class="md-nav__link">
         
   
   
@@ -784,7 +914,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/parameters/" class="md-nav__link">
+      <a href="../parameters/" class="md-nav__link">
         
   
   
@@ -812,7 +942,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/tokens/" class="md-nav__link">
+      <a href="../tokens/" class="md-nav__link">
         
   
   
@@ -840,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/context-windows/" class="md-nav__link">
+      <a href="../context-windows/" class="md-nav__link">
         
   
   
@@ -868,7 +998,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../core-concepts/llm-frameworks/" class="md-nav__link">
+      <a href="../llm-frameworks/" class="md-nav__link">
         
   
   
@@ -900,31 +1030,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
   
@@ -942,7 +1067,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -960,7 +1085,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../webpage-summarizer/" class="md-nav__link">
+      <a href="../../projects/webpage-summarizer/" class="md-nav__link">
         
   
   
@@ -988,7 +1113,7 @@
   
   
     <li class="md-nav__item">
-      <a href="./" class="md-nav__link">
+      <a href="../../projects/webpage-brochurizer/" class="md-nav__link">
         
   
   
@@ -1016,7 +1141,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../joker/" class="md-nav__link">
+      <a href="../../projects/joker/" class="md-nav__link">
         
   
   
@@ -1044,7 +1169,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../adversarial-conversation/" class="md-nav__link">
+      <a href="../../projects/adversarial-conversation/" class="md-nav__link">
         
   
   
@@ -1092,8 +1217,45 @@
   
 
 
-<h1 id="ai-webpage-brochurizer">ai-webpage-brochurizer<a class="headerlink" href="#ai-webpage-brochurizer" title="Permanent link">&para;</a></h1>
-<p>Converts the given page into a brochure in markdown format.</p>
+<h1 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h1>
+<h2 id="types-of-models">Types of Models<a class="headerlink" href="#types-of-models" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Closed source</li>
+<li>Open source</li>
+</ul>
+<h3 id="closed-source-models">Closed Source Models<a class="headerlink" href="#closed-source-models" title="Permanent link">&para;</a></h3>
+<ul>
+<li>GPT from OpenAI</li>
+<li>Claude from Anthropic</li>
+<li>Gemini from Google</li>
+<li>Grok from x.ai</li>
+</ul>
+<h3 id="open-source-models">Open Source Models<a class="headerlink" href="#open-source-models" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Llama from Meta</li>
+<li>Mixtral from Mistral</li>
+<li>Qwen from Alibaba</li>
+<li>Phi from Microsoft</li>
+<li>Deepseek from Deepseek AI</li>
+</ul>
+<h2 id="three-ways-to-use-models">Three Ways to Use Models<a class="headerlink" href="#three-ways-to-use-models" title="Permanent link">&para;</a></h2>
+<ul>
+<li>User Interfaces</li>
+<li>Cloud APIs</li>
+</ul>
+<h3 id="user-interfaces">User Interfaces<a class="headerlink" href="#user-interfaces" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Like ChatGPT, Claude and Gemini UI.</li>
+</ul>
+<h3 id="cloud-apis">Cloud APIs<a class="headerlink" href="#cloud-apis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Frameworks like LangChain.</li>
+<li>Managed AI Cloud Services</li>
+<li>Amazon Bedrock</li>
+<li>Google Vertex</li>
+<li>Azure ML</li>
+</ul>
+<hr />
 
 
 
@@ -1129,7 +1291,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../joker/" class="md-footer__link md-footer__link--prev" aria-label="Previous: ai-joker">
+          <a href="../../setup/setup-openai/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup OpenAI">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1139,20 +1301,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                ai-joker
+                Setup OpenAI
               </div>
             </div>
           </a>
         
         
           
-          <a href="../webpage-summarizer/" class="md-footer__link md-footer__link--next" aria-label="Next: AI Webpage Summarizer">
+          <a href="../chat-completions/" class="md-footer__link md-footer__link--next" aria-label="Next: Chat Completions">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                AI Webpage Summarizer
+                Chat Completions
               </div>
             </div>
             <div class="md-footer__button md-icon">
