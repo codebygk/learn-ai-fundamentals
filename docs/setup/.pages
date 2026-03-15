@@ -1,0 +1,9 @@
+title: Setup
+nav:
+  - setup-python.md
+  - setup-git.md
+  - setup-cursor.md
+  - setup-uv.md
+  - setup-project.md
+  - setup-ollama.md
+  - setup-openai.md

@@ -1,8 +1,8 @@
-## Transformers
+# Transformers
 At a high level, Transformers process data in parallel and use attention to understand relationships between all parts of the input.
 The core idea is "Each word looks at every other word and decides what matters most".
 
-### History of Transformers
+## History of Transformers
 
 Before Transformer architecture, LSTM (Long Short Term Memory), it is more powerful and has more capabilities but cannot do actions in parallel.
 
@@ -16,5 +16,3 @@ Before Transformer architecture, LSTM (Long Short Term Memory), it is more power
 2025 - GPT-5
 
 ---
-
-Previous: [Chat Completions](/09-chat-completions-api.md) | Next: [Parameters](/11-parameters.md)

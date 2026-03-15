@@ -1,13 +1,13 @@
 [project]
-name = "ai-webpage-summarizer"
+name = "learn-ai-fundamentals"
 version = "0.1.0"
-description = "Add your description here"
+description = "Learn Artificial Intelligence by Building LLM apps and enhancing them with RAG, LoRA and AI Agents."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "bs4>=0.0.2",
     "litellm>=1.82.2",
-    "mkdocs>=1.6.1",
+    "mkdocs<2.0",
     "mkdocs-awesome-pages-plugin>=2.10.1",
     "mkdocs-material>=9.7.5",
     "ollama>=0.6.1",

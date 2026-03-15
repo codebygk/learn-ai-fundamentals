@@ -1,4 +1,4 @@
-## Context Windows
+# Context Windows
 - Maximum number of tokens that the model can consider when generating the next token.
 - Context window is the key to decide how well a model can remember the context.
 
@@ -13,5 +13,3 @@
 To view live api costs of all models, visit [LLM Leaderboard](https://vellum.ai/llm-leaderboard)
 
 ---
-
-Previous: [Tokens](/12-tokens.md)

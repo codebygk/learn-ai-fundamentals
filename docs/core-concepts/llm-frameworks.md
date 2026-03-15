@@ -1,6 +1,6 @@
-## LLM Frameworks
+# LLM Frameworks
 
-### Langchain
+## Langchain
 - Powerful but heavy llm framework
 
 ```python
@@ -12,7 +12,7 @@ print(response.content)
 ```
 
 
-### LiteLLM
+## LiteLLM
 - Lightweight llm framework
 
 ```python
@@ -27,7 +27,7 @@ print(f"Total Cost: {response._hidden_params["response_cost"]*100:.4f} cents")
 ```
 
 
-### Prompt Caching
+## Prompt Caching
 - Cache allows users to reduce upto 10x costs but need to pay small additional cost for enabling prompt caching.
 
 ```python
@@ -50,4 +50,3 @@ print(f"Total Cost: {response._hidden_params["response_cost"]*100:.4f} cents")
 ```
 
 **Note:** Always add the questions or variable text at the end, to effectively enable cache as the initial text will remain the same in all requests.
-

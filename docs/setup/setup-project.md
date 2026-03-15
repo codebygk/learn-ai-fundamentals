@@ -1,4 +1,4 @@
-## Setup Project
+# Setup Project
 
 ### Setup Project Folder
 - Create a folder name that you would like. Example: `learn-ai-fundamentals`.
@@ -17,5 +17,3 @@
   ```
 
 ---
-
-Previous: [Setup UV](/04-setup-uv.md) | Next: [Setup Ollama](/06-setup-ollama.md)

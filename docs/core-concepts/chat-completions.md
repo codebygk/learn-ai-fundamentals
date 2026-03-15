@@ -1,14 +1,14 @@
-## Chat Completions
+# Chat Completions
 - Create a `.env` file at the root of the directory.
 - Add `OPENAI_API_KEY` variable in the environment file like below.
   ```
   OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
   ```
 
-  Note: Replace _sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX_ with your own key copied from [Setup OpenAI](./06-Setup-OpenAI.md)
+  Note: Replace _sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX_ with your own key copied from [Setup OpenAI](../setup/setup-openai.md)
 
 
-### With Requests
+## With Requests
 ```python
 import requests
 headers = {"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"}
@@ -50,5 +50,3 @@ print(content)
 ```
 
 ---
-
-Previous: [Models](/08-models.md) | Next: [Transformers](/10-transformers.md)

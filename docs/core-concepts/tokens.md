@@ -1,4 +1,4 @@
-## Tokens
+# Tokens
 In LLMs (Large Language Models), tokens are the basic units of text that the model reads, processes, and generates. 
 Tokens are how text is broken down before the model understands it.
 
@@ -27,5 +27,3 @@ for token_id in tokens:
 ```
 
 ---
-
-Previous: [Parameters](/11-parameters.md) | Next: [Context Windows](/13-context-windows.md)

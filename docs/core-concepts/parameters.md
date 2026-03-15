@@ -1,4 +1,4 @@
-## Parameters
+# Parameters
 Parameters are the learned numerical values that store an LLM's understanding of language.
 
 ## Model Parameters
@@ -14,5 +14,3 @@ Parameters are the learned numerical values that store an LLM's understanding of
 - Latest Frontier Models - Undisclosed
 
 ---
-
-Previous: [Transformers](/10-transformers.md) | Next: [Tokens](/12-tokens.md)

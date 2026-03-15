@@ -1,4 +1,4 @@
-## Setup OpenAI
+# Setup OpenAI
 - Navigate to [OpenAI](https://platform.openai.com)
 - Signup or login to your account.
 - Navigate to **Settings > Billing**.
@@ -11,8 +11,6 @@
 - Click on **Create Secret Key** button.
 - Copy the secret key. The key should start with _sk-proj-_. This key needs to be updated in the environment file in the [01]
 
-Note: If you don't want to pay, switch over to free options such as [Ollama](./03-Setup-Ollama.md).
+Note: If you don't want to pay, switch over to free options such as [Ollama](../setup/setup-ollama.md).
 
 ---
-
-Previous: [Setup Ollama](/06-setup-ollama.md) | Next: [Models](/08-models.md)

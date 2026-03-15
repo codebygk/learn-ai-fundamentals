@@ -1,4 +1,4 @@
-## Setup Cursor
+# Setup Cursor
 - Download the latest version of cursor from [here](https://cursor.com/download)
 - Run the executable and install with default options.
 - After the installation, Run the command `cursor --version` in terminal. The output should show the version of cursor which is installed.
@@ -10,5 +10,3 @@ Note: if you prefer Visual studio code instead of cursor download it from [here]
 - Install Jupyter extension by _ms-toolsai_
 
 ---
-
-Previous: [Setup Git](02-setup-git.md) | Next: [Setup UV](04-setup-uv.md)
