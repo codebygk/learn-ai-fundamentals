@@ -5,4 +5,4 @@
 
 ---
 
-Next: [Setup Git](/02-setup-git.md)
+Next: [Setup Git](02-setup-git.md)

@@ -5,4 +5,4 @@
 
 ---
 
-Previous: [Setup Python](/01-setup-python.md) | Next: [Setup Cursor](/03-setup-cursor.md)
+Previous: [Setup Python](01-setup-python.md) | Next: [Setup Cursor](03-setup-cursor.md)

@@ -8,3 +8,4 @@ output/
 logs/
 uv.lock
 .python-version
+site/
