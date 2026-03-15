@@ -8,25 +8,29 @@
       
       
       
+        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/core/08-models/">
       
+      
+      
+        <link rel="next" href="../09-chat-completions/">
       
       
         
       
       
-      <link rel="icon" href="/learn-ai-fundamentals/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>Learn AI Fundamentals</title>
+        <title>08 models - Learn AI Fundamentals</title>
       
     
     
-      <link rel="stylesheet" href="/learn-ai-fundamentals/assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="/learn-ai-fundamentals/assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -45,7 +49,7 @@
       
     
     
-    <script>__md_scope=new URL("/learn-ai-fundamentals/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -67,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#types-of-models" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -77,7 +86,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/learn-ai-fundamentals/." title="Learn AI Fundamentals" class="md-header__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
+    <a href="../.." title="Learn AI Fundamentals" class="md-header__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -97,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              08 models
             
           </span>
         </div>
@@ -180,11 +189,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/learn-ai-fundamentals/core/08-models/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -211,7 +222,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/learn-ai-fundamentals/projects/adversarial-conversation/" class="md-tabs__link">
+        <a href="../../projects/adversarial-conversation/" class="md-tabs__link">
           
   
   
@@ -234,7 +245,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/learn-ai-fundamentals/setup/01-setup-python/" class="md-tabs__link">
+        <a href="../../setup/01-setup-python/" class="md-tabs__link">
           
   
   
@@ -268,7 +279,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/learn-ai-fundamentals/." title="Learn AI Fundamentals" class="md-nav__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
+    <a href="../.." title="Learn AI Fundamentals" class="md-nav__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -295,26 +306,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
             
   
   
@@ -332,7 +348,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_1">
             <span class="md-nav__icon md-icon"></span>
             
@@ -347,10 +363,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/08-models/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 models
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -366,6 +407,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closed-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closed Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-ways-to-use-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Ways to Use Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Ways to Use Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -378,7 +515,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/09-chat-completions/" class="md-nav__link">
+      <a href="../09-chat-completions/" class="md-nav__link">
         
   
   
@@ -406,7 +543,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/10-transformers/" class="md-nav__link">
+      <a href="../10-transformers/" class="md-nav__link">
         
   
   
@@ -434,7 +571,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/11-parameters/" class="md-nav__link">
+      <a href="../11-parameters/" class="md-nav__link">
         
   
   
@@ -462,7 +599,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/12-tokens/" class="md-nav__link">
+      <a href="../12-tokens/" class="md-nav__link">
         
   
   
@@ -490,7 +627,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/13-context-windows/" class="md-nav__link">
+      <a href="../13-context-windows/" class="md-nav__link">
         
   
   
@@ -518,7 +655,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/core/14-llm-frameworks/" class="md-nav__link">
+      <a href="../14-llm-frameworks/" class="md-nav__link">
         
   
   
@@ -657,7 +794,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/projects/adversarial-conversation/" class="md-nav__link">
+      <a href="../../projects/adversarial-conversation/" class="md-nav__link">
         
   
   
@@ -745,7 +882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/projects/gradio-ui/" class="md-nav__link">
+      <a href="../../projects/gradio-ui/" class="md-nav__link">
         
   
   
@@ -833,7 +970,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/projects/joker/" class="md-nav__link">
+      <a href="../../projects/joker/" class="md-nav__link">
         
   
   
@@ -921,7 +1058,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/projects/webpage-brochurizer/" class="md-nav__link">
+      <a href="../../projects/webpage-brochurizer/" class="md-nav__link">
         
   
   
@@ -1009,7 +1146,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/projects/webpage-summarizer/" class="md-nav__link">
+      <a href="../../projects/webpage-summarizer/" class="md-nav__link">
         
   
   
@@ -1104,7 +1241,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/01-setup-python/" class="md-nav__link">
+      <a href="../../setup/01-setup-python/" class="md-nav__link">
         
   
   
@@ -1132,7 +1269,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/02-setup-git/" class="md-nav__link">
+      <a href="../../setup/02-setup-git/" class="md-nav__link">
         
   
   
@@ -1160,7 +1297,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/03-setup-cursor/" class="md-nav__link">
+      <a href="../../setup/03-setup-cursor/" class="md-nav__link">
         
   
   
@@ -1188,7 +1325,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/04-setup-uv/" class="md-nav__link">
+      <a href="../../setup/04-setup-uv/" class="md-nav__link">
         
   
   
@@ -1216,7 +1353,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/05-setup-project/" class="md-nav__link">
+      <a href="../../setup/05-setup-project/" class="md-nav__link">
         
   
   
@@ -1244,7 +1381,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/06-setup-ollama/" class="md-nav__link">
+      <a href="../../setup/06-setup-ollama/" class="md-nav__link">
         
   
   
@@ -1272,7 +1409,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn-ai-fundamentals/setup/07-setup-openai/" class="md-nav__link">
+      <a href="../../setup/07-setup-openai/" class="md-nav__link">
         
   
   
@@ -1318,6 +1455,92 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#types-of-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Types of Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Types of Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#closed-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Closed Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-ways-to-use-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Ways to Use Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Ways to Use Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud APIs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1329,8 +1552,67 @@
               
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+  
+  
+
+
+  <h1>08 models</h1>
+
+<h2 id="types-of-models">Types of Models</h2>
+<ul>
+<li>Closed source</li>
+<li>Open source</li>
+</ul>
+<h3 id="closed-source-models">Closed Source Models</h3>
+<ul>
+<li>GPT from OpenAI</li>
+<li>Claude from Anthropic</li>
+<li>Gemini from Google</li>
+<li>Grok from x.ai</li>
+</ul>
+<h3 id="open-source-models">Open Source Models</h3>
+<ul>
+<li>Llama from Meta</li>
+<li>Mixtral from Mistral</li>
+<li>Qwen from Alibaba</li>
+<li>Phi from Microsoft</li>
+<li>Deepseek from Deepseek AI</li>
+</ul>
+<h2 id="three-ways-to-use-models">Three Ways to Use Models</h2>
+<ul>
+<li>User Interfaces</li>
+<li>Cloud APIs</li>
+</ul>
+<h3 id="user-interfaces">User Interfaces</h3>
+<ul>
+<li>Like ChatGPT, Claude and Gemini UI.</li>
+</ul>
+<h3 id="cloud-apis">Cloud APIs</h3>
+<ul>
+<li>Frameworks like LangChain.</li>
+<li>Managed AI Cloud Services</li>
+<li>Amazon Bedrock</li>
+<li>Google Vertex</li>
+<li>Azure ML</li>
+</ul>
+<hr />
+<p>Previous: <a href="/07-setup-openai.md">Setup OpenAI</a> | Next: <a href="/09-chat-completions-api.md">Chat Completions API</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1373,10 +1655,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "/learn-ai-fundamentals/", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "/learn-ai-fundamentals/assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.top", "search.highlight", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="/learn-ai-fundamentals/assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
