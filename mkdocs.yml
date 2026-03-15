@@ -1,85 +1,20 @@
-site_name: "Techbook"
-site_url: https://techbook.pages.dev/
+site_name: Learn AI Fundamentals
+site_url: https://codebygk.github.io/learn-ai-fundamentals/
+repo_url: https://github.com/codebygk/learn-ai-fundamentals
+repo_name: codebygk/learn-ai-fundamentals
 
-  
-theme:
 theme:
   name: material
-  favicon: book.svg
-
+  palette:
+    scheme: default
+    primary: indigo
+    accent: indigo
   features:
     - navigation.tabs
-    - navigation.tabs.icons   # must enable this
-    - navigation.tabs.scroll
-    - navigation.tabs.sticky
     - navigation.sections
-    - navigation.footer
+    - navigation.top
     - search.highlight
-    - search.suggest
-    - toc.integrate
-    - content.code.annotate
-
-  palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: teal
-      accent: teal
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: teal
-      accent: teal
-      toggle:
-        icon: material/brightness-4
-        name: Switch to system preference  features
-
-markdown_extensions:
- # turn OFF codehilite linenums
-  - codehilite:
-      guess_lang: false
-
-  # use pymdownx.highlight instead
-  - pymdownx.highlight:
-      linenums: true           # this actually shows the numbers
-      anchor_linenums: true    # makes them clickable
-  - pymdownx.superfences
-  - pymdownx.inlinehilite
-  - admonition
-  - toc:
-      permalink: true
-  
+    - content.code.copy
 plugins:
   - search
-  - awesome-nav:
-      filename: nav.yml 
-      logs: 
-        nav_override: warning
-        root_title: warning
-        root_hide: warning
-        no_matches: warning
-
-extra_css:
-  - styles.css
-
-extra:
-  generator: false
-  navigation:
-    tabs:
-      AI: "material/robot"         # use Material icon name, not FontAwesome
-      Automation: "material/cogs"
-  social:
-  - icon: fontawesome/brands/linkedin
-    link: https://www.linkedin.com/in/codebygk/
-    name: LinkedIn
-  - icon: fontawesome/brands/github
-    link: https://github.com/codebygk
-    name: GitHub
-  - icon: fontawesome/brands/twitter
-    link: https://twitter.com/gobeecode
-    name: Twitter
+  - awesome-pages
