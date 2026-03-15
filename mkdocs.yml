@@ -6,25 +6,25 @@ repo_name: codebygk/learn-ai-fundamentals
 theme:
   name: material
   favicon: assets/images/book.svg
+  logo: assets/images/book.svg
   palette:
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: teal
-      accent: bluegrey
+      primary: deep purple
+      accent: indigo
       toggle:
-        icon: material/brightness-7
+        icon: material/weather-night
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: teal
-      accent: bluegrey
+      primary: deep purple
+      accent: indigo
       toggle:
-        icon: material/brightness-4
-        name: Switch to system preference  features
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    text: Inter
+    code: JetBrains Mono
   features:
     - navigation.tabs
     - navigation.tabs.icons # must enable this
