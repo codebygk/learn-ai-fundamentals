@@ -405,3 +405,17 @@ body:has(.ai-home) .md-content__button {
     background: rgba(83, 74, 183, 0.25);
     color: #CCC9F5;
 }
+
+/* Just recolor Material's built-in arrow to match your theme */
+.md-nav__icon {
+    color: #534AB7;
+}
+
+[data-md-color-scheme="slate"] .md-nav__icon {
+    color: #AFA9EC;
+}
+
+/* Hide start learning button until JS sets it */
+.ai-btn--primary {
+    visibility: hidden;
+}

@@ -8,31 +8,31 @@
       
       
       
-        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/setup/setup-openai/">
+        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/notes/basics/chat-completions/">
       
       
-        <link rel="prev" href="../setup-ollama/">
+        <link rel="prev" href="../models/">
       
       
-        <link rel="next" href="../../basics/models/">
+        <link rel="next" href="../transformers/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/book.svg">
+      <link rel="icon" href="../../../assets/images/book.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.5">
     
     
       
-        <title>Setup OpenAI - Learn AI Fundamentals</title>
+        <title>Chat Completions - Learn AI Fundamentals</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -51,9 +51,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/css/styles.css">
+      <link rel="stylesheet" href="../../../assets/css/styles.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#setup-openai" class="md-skip">
+        <a href="#chat-completions" class="md-skip">
           Skip to content
         </a>
       
@@ -94,9 +94,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Learn AI Fundamentals" class="md-header__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
+    <a href="../../.." title="Learn AI Fundamentals" class="md-header__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
       
-  <img src="../../assets/images/book.svg" alt="logo">
+  <img src="../../../assets/images/book.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Setup OpenAI
+              Chat Completions
             
           </span>
         </div>
@@ -220,7 +220,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href="../../.." class="md-tabs__link">
         
   
   
@@ -242,17 +242,29 @@
   
     
     
+      
+  
+  
+  
+    
+  
+  
+    
+    
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../setup-python/" class="md-tabs__link">
+        <a href="../../setup/setup-python/" class="md-tabs__link">
           
   
   
     
   
-  Setup
+  Notes
 
         </a>
       </li>
+    
+  
+
     
   
 
@@ -265,29 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../basics/models/" class="md-tabs__link">
-          
-  
-  
-    
-  
-  Basics
-
-        </a>
-      </li>
-    
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="../../projects/projects/" class="md-tabs__link">
+        <a href="../../../projects/projects/" class="md-tabs__link">
           
   
   
@@ -331,9 +321,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Learn AI Fundamentals" class="md-nav__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
+    <a href="../../.." title="Learn AI Fundamentals" class="md-nav__button md-logo" aria-label="Learn AI Fundamentals" data-md-component="logo">
       
-  <img src="../../assets/images/book.svg" alt="logo">
+  <img src="../../../assets/images/book.svg" alt="logo">
 
     </a>
     Learn AI Fundamentals
@@ -360,7 +350,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href="../../.." class="md-nav__link">
         
   
   
@@ -395,16 +385,6 @@
       
         
       
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
     
     
     
@@ -412,8 +392,6 @@
         
         
       
-      
-        
       
     
     
@@ -431,7 +409,7 @@
   <span class="md-ellipsis">
     
   
-    Setup
+    Notes
   
 
     
@@ -444,6 +422,74 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -460,7 +506,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-python/" class="md-nav__link">
+      <a href="../../setup/setup-python/" class="md-nav__link">
         
   
   
@@ -488,7 +534,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-git/" class="md-nav__link">
+      <a href="../../setup/setup-git/" class="md-nav__link">
         
   
   
@@ -516,7 +562,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-cursor/" class="md-nav__link">
+      <a href="../../setup/setup-cursor/" class="md-nav__link">
         
   
   
@@ -544,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-uv/" class="md-nav__link">
+      <a href="../../setup/setup-uv/" class="md-nav__link">
         
   
   
@@ -572,7 +618,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-project/" class="md-nav__link">
+      <a href="../../setup/setup-project/" class="md-nav__link">
         
   
   
@@ -600,7 +646,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setup-ollama/" class="md-nav__link">
+      <a href="../../setup/setup-ollama/" class="md-nav__link">
         
   
   
@@ -608,6 +654,138 @@
     
   
     Setup Ollama
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../setup/setup-openai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup OpenAI
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models
   
 
     
@@ -637,82 +815,14 @@
         
       
       
-      <a href="./" class="md-nav__link md-nav__link--active">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Setup OpenAI
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
-        
+        <label class="md-nav__link md-nav__link--active" for="__toc">
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
-            
   
   
   <span class="md-ellipsis">
     
   
-    Basics
+    Chat Completions
   
 
     
@@ -720,56 +830,10 @@
   
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    Basics
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/models/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Models
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../basics/chat-completions/" class="md-nav__link">
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -785,6 +849,54 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#with-requests" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With Requests
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="With Requests">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#with-openai-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        With OpenAI Package
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -797,7 +909,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/transformers/" class="md-nav__link">
+      <a href="../transformers/" class="md-nav__link">
         
   
   
@@ -825,7 +937,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/parameters/" class="md-nav__link">
+      <a href="../parameters/" class="md-nav__link">
         
   
   
@@ -853,7 +965,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/tokens/" class="md-nav__link">
+      <a href="../tokens/" class="md-nav__link">
         
   
   
@@ -881,7 +993,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/context-windows/" class="md-nav__link">
+      <a href="../context-windows/" class="md-nav__link">
         
   
   
@@ -909,7 +1021,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../basics/llm-frameworks/" class="md-nav__link">
+      <a href="../llm-frameworks/" class="md-nav__link">
         
   
   
@@ -925,6 +1037,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -953,18 +1073,18 @@
     
       
       
-        
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
             
   
   
@@ -982,8 +1102,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -1000,7 +1120,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../projects/projects/" class="md-nav__link">
+      <a href="../../../projects/projects/" class="md-nav__link">
         
   
   
@@ -1048,24 +1168,83 @@
   
 
 
-<h1 id="setup-openai">Setup OpenAI<a class="headerlink" href="#setup-openai" title="Permanent link">&para;</a></h1>
+<h1 id="chat-completions">Chat Completions<a class="headerlink" href="#chat-completions" title="Permanent link">&para;</a></h1>
 <ul>
-<li>Navigate to <a href="https://platform.openai.com">OpenAI</a></li>
-<li>Signup or login to your account.</li>
-<li>Navigate to <strong>Settings &gt; Billing</strong>.</li>
-<li>Add atleast 5 dollars to your credit. </li>
-<li><strong>Turn off</strong> auto recharge.</li>
-<li>Navigate to API keys option in the sidebar.</li>
-<li>Click on <strong>Create New Secret Key</strong> button.</li>
-<li>Enter a name for the key.</li>
-<li>Select <strong>Default project</strong> in the project dropdown. This will help you use this key across projects.</li>
-<li>Click on <strong>Create Secret Key</strong> button.</li>
-<li>Copy the secret key. The key should start with <em>sk-proj-</em>. This key needs to be updated in the environment file in the [01]</li>
+<li>Create a <code>.env</code> file at the root of the directory.</li>
+<li>Add <code>OPENAI_API_KEY</code> variable in the environment file like below.
+  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+</code></pre></div></td></tr></table></div></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you don't want to pay, switch over to free options such as <a href="../setup-ollama/">Ollama</a>.</p>
+<p>Replace <em>sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX</em> with your own key copied from <a href="../../setup/setup-openai/">Setup OpenAI</a></p>
 </div>
+<h2 id="with-requests">With Requests<a class="headerlink" href="#with-requests" title="Permanent link">&para;</a></h2>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-1-10">10</a></span>
+<span class="normal"><a href="#__codelineno-1-11">11</a></span>
+<span class="normal"><a href="#__codelineno-1-12">12</a></span>
+<span class="normal"><a href="#__codelineno-1-13">13</a></span>
+<span class="normal"><a href="#__codelineno-1-14">14</a></span>
+<span class="normal"><a href="#__codelineno-1-15">15</a></span>
+<span class="normal"><a href="#__codelineno-1-16">16</a></span>
+<span class="normal"><a href="#__codelineno-1-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">api_key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
+<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
+<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="s2">&quot;models&quot;</span><span class="p">:</span> <span class="s2">&quot;gpt-5-nano&quot;</span><span class="p">,</span>
+<a id="__codelineno-1-6" name="__codelineno-1-6"></a>    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
+<a id="__codelineno-1-7" name="__codelineno-1-7"></a>        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Tell me a fun fact&quot;</span><span class="p">}</span>
+<a id="__codelineno-1-8" name="__codelineno-1-8"></a>    <span class="p">]</span>
+<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="p">}</span>
+<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
+<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+<a id="__codelineno-1-12" name="__codelineno-1-12"></a>    <span class="s2">&quot;https://api.openai.com/v1/chat/completions&quot;</span><span class="p">,</span> 
+<a id="__codelineno-1-13" name="__codelineno-1-13"></a>    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+<a id="__codelineno-1-14" name="__codelineno-1-14"></a>    <span class="n">json</span><span class="o">=</span><span class="n">payload</span>
+<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="p">)</span>
+<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="n">content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;choices&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;messages&quot;</span><span class="p">][</span><span class="s2">&quot;content&quot;</span><span class="p">]</span>
+<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="with-openai-package">With OpenAI Package<a class="headerlink" href="#with-openai-package" title="Permanent link">&para;</a></h3>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
+<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
+<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
+<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
+<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
+<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
+<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
+<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
+<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
+<span class="normal"><a href="#__codelineno-2-10">10</a></span>
+<span class="normal"><a href="#__codelineno-2-11">11</a></span>
+<span class="normal"><a href="#__codelineno-2-12">12</a></span>
+<span class="normal"><a href="#__codelineno-2-13">13</a></span>
+<span class="normal"><a href="#__codelineno-2-14">14</a></span>
+<span class="normal"><a href="#__codelineno-2-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
+<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">openai</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
+<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">response</span> <span class="o">=</span> <span class="n">openai</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+<a id="__codelineno-2-6" name="__codelineno-2-6"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-5-nano&quot;</span><span class="p">,</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8"></a>        <span class="p">{</span>
+<a id="__codelineno-2-9" name="__codelineno-2-9"></a>            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> 
+<a id="__codelineno-2-10" name="__codelineno-2-10"></a>            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Tell me a fun fact&quot;</span>
+<a id="__codelineno-2-11" name="__codelineno-2-11"></a>        <span class="p">}</span>
+<a id="__codelineno-2-12" name="__codelineno-2-12"></a>    <span class="p">]</span>
+<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="p">)</span>
+<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="n">content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
+<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <hr />
 
 
@@ -1102,7 +1281,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../setup-ollama/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup Ollama">
+          <a href="../models/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Models">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1112,20 +1291,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Setup Ollama
+                Models
               </div>
             </div>
           </a>
         
         
           
-          <a href="../../basics/models/" class="md-footer__link md-footer__link--next" aria-label="Next: Models">
+          <a href="../transformers/" class="md-footer__link md-footer__link--next" aria-label="Next: Transformers">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Models
+                Transformers
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1186,10 +1365,12 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.icons", "navigation.tabs.scroll", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "navigation.tracking", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../assets/js/nav-fix.js"></script>
       
     
   </body>
