@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/core-concepts/chat-completions/">
+        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/basics/models/">
       
       
-        <link rel="prev" href="../models/">
+        <link rel="prev" href="../../setup/setup-openai/">
       
       
-        <link rel="next" href="../transformers/">
+        <link rel="next" href="../chat-completions/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Chat Completions - Learn AI Fundamentals</title>
+        <title>Models - Learn AI Fundamentals</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chat-completions" class="md-skip">
+        <a href="#models" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chat Completions
+              Models
             
           </span>
         </div>
@@ -245,6 +245,8 @@
           
   
   
+    
+  
   Setup
 
         </a>
@@ -263,11 +265,13 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../models/" class="md-tabs__link">
+        <a href="./" class="md-tabs__link">
           
   
   
-  Core Concepts
+    
+  
+  Basics
 
         </a>
       </li>
@@ -286,6 +290,8 @@
         <a href="../../projects/projects/" class="md-tabs__link">
           
   
+  
+    
   
   Projects
 
@@ -381,6 +387,22 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -639,6 +661,22 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -664,7 +702,7 @@
   <span class="md-ellipsis">
     
   
-    Core Concepts
+    Basics
   
 
     
@@ -680,39 +718,11 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Core Concepts
+    Basics
   
 
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../models/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Models
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
             
               
                 
@@ -737,7 +747,7 @@
   <span class="md-ellipsis">
     
   
-    Chat Completions
+    Models
   
 
     
@@ -755,7 +765,7 @@
   <span class="md-ellipsis">
     
   
-    Chat Completions
+    Models
   
 
     
@@ -781,22 +791,72 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#with-requests" class="md-nav__link">
+  <a href="#types-of-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        With Requests
+        Types of Models
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="With Requests">
+    <nav class="md-nav" aria-label="Types of Models">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#with-openai-package" class="md-nav__link">
+  <a href="#closed-source-models" class="md-nav__link">
     <span class="md-ellipsis">
       
-        With OpenAI Package
+        Closed Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#open-source-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Open Source Models
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-ways-to-use-models" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three Ways to Use Models
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three Ways to Use Models">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#user-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cloud-apis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cloud APIs
       
     </span>
   </a>
@@ -812,6 +872,34 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chat-completions/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Chat Completions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -972,6 +1060,10 @@
   
     
     
+      
+        
+      
+    
     
     
       
@@ -1071,80 +1163,44 @@
   
 
 
-<h1 id="chat-completions">Chat Completions<a class="headerlink" href="#chat-completions" title="Permanent link">&para;</a></h1>
+<h1 id="models">Models<a class="headerlink" href="#models" title="Permanent link">&para;</a></h1>
+<h2 id="types-of-models">Types of Models<a class="headerlink" href="#types-of-models" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Create a <code>.env</code> file at the root of the directory.</li>
-<li>Add <code>OPENAI_API_KEY</code> variable in the environment file like below.
-  <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-1">1</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1"></a>OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
-</code></pre></div></td></tr></table></div></li>
+<li>Closed source</li>
+<li>Open source</li>
 </ul>
-<p>Note: Replace <em>sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX</em> with your own key copied from <a href="../../setup/setup-openai/">Setup OpenAI</a></p>
-<h2 id="with-requests">With Requests<a class="headerlink" href="#with-requests" title="Permanent link">&para;</a></h2>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-1-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-1-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-1-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-1-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-1-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-1-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-1-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-1-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-1-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-1-10">10</a></span>
-<span class="normal"><a href="#__codelineno-1-11">11</a></span>
-<span class="normal"><a href="#__codelineno-1-12">12</a></span>
-<span class="normal"><a href="#__codelineno-1-13">13</a></span>
-<span class="normal"><a href="#__codelineno-1-14">14</a></span>
-<span class="normal"><a href="#__codelineno-1-15">15</a></span>
-<span class="normal"><a href="#__codelineno-1-16">16</a></span>
-<span class="normal"><a href="#__codelineno-1-17">17</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2"></a><span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Bearer </span><span class="si">{</span><span class="n">api_key</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="s2">&quot;Content-Type&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span>
-<a id="__codelineno-1-3" name="__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4"></a><span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5"></a>    <span class="s2">&quot;models&quot;</span><span class="p">:</span> <span class="s2">&quot;gpt-5-nano&quot;</span><span class="p">,</span>
-<a id="__codelineno-1-6" name="__codelineno-1-6"></a>    <span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[</span>
-<a id="__codelineno-1-7" name="__codelineno-1-7"></a>        <span class="p">{</span><span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Tell me a fun fact&quot;</span><span class="p">}</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8"></a>    <span class="p">]</span>
-<a id="__codelineno-1-9" name="__codelineno-1-9"></a><span class="p">}</span>
-<a id="__codelineno-1-10" name="__codelineno-1-10"></a>
-<a id="__codelineno-1-11" name="__codelineno-1-11"></a><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
-<a id="__codelineno-1-12" name="__codelineno-1-12"></a>    <span class="s2">&quot;https://api.openai.com/v1/chat/completions&quot;</span><span class="p">,</span> 
-<a id="__codelineno-1-13" name="__codelineno-1-13"></a>    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14"></a>    <span class="n">json</span><span class="o">=</span><span class="n">payload</span>
-<a id="__codelineno-1-15" name="__codelineno-1-15"></a><span class="p">)</span>
-<a id="__codelineno-1-16" name="__codelineno-1-16"></a><span class="n">content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;choices&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;messages&quot;</span><span class="p">][</span><span class="s2">&quot;content&quot;</span><span class="p">]</span>
-<a id="__codelineno-1-17" name="__codelineno-1-17"></a><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-<h3 id="with-openai-package">With OpenAI Package<a class="headerlink" href="#with-openai-package" title="Permanent link">&para;</a></h3>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-2-1"> 1</a></span>
-<span class="normal"><a href="#__codelineno-2-2"> 2</a></span>
-<span class="normal"><a href="#__codelineno-2-3"> 3</a></span>
-<span class="normal"><a href="#__codelineno-2-4"> 4</a></span>
-<span class="normal"><a href="#__codelineno-2-5"> 5</a></span>
-<span class="normal"><a href="#__codelineno-2-6"> 6</a></span>
-<span class="normal"><a href="#__codelineno-2-7"> 7</a></span>
-<span class="normal"><a href="#__codelineno-2-8"> 8</a></span>
-<span class="normal"><a href="#__codelineno-2-9"> 9</a></span>
-<span class="normal"><a href="#__codelineno-2-10">10</a></span>
-<span class="normal"><a href="#__codelineno-2-11">11</a></span>
-<span class="normal"><a href="#__codelineno-2-12">12</a></span>
-<span class="normal"><a href="#__codelineno-2-13">13</a></span>
-<span class="normal"><a href="#__codelineno-2-14">14</a></span>
-<span class="normal"><a href="#__codelineno-2-15">15</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">openai</span><span class="w"> </span><span class="kn">import</span> <span class="n">OpenAI</span>
-<a id="__codelineno-2-2" name="__codelineno-2-2"></a>
-<a id="__codelineno-2-3" name="__codelineno-2-3"></a><span class="n">openai</span> <span class="o">=</span> <span class="n">OpenAI</span><span class="p">()</span>
-<a id="__codelineno-2-4" name="__codelineno-2-4"></a>
-<a id="__codelineno-2-5" name="__codelineno-2-5"></a><span class="n">response</span> <span class="o">=</span> <span class="n">openai</span><span class="o">.</span><span class="n">chat</span><span class="o">.</span><span class="n">completions</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
-<a id="__codelineno-2-6" name="__codelineno-2-6"></a>    <span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-5-nano&quot;</span><span class="p">,</span>
-<a id="__codelineno-2-7" name="__codelineno-2-7"></a>    <span class="n">messages</span><span class="o">=</span><span class="p">[</span>
-<a id="__codelineno-2-8" name="__codelineno-2-8"></a>        <span class="p">{</span>
-<a id="__codelineno-2-9" name="__codelineno-2-9"></a>            <span class="s2">&quot;role&quot;</span><span class="p">:</span> <span class="s2">&quot;user&quot;</span><span class="p">,</span> 
-<a id="__codelineno-2-10" name="__codelineno-2-10"></a>            <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;Tell me a fun fact&quot;</span>
-<a id="__codelineno-2-11" name="__codelineno-2-11"></a>        <span class="p">}</span>
-<a id="__codelineno-2-12" name="__codelineno-2-12"></a>    <span class="p">]</span>
-<a id="__codelineno-2-13" name="__codelineno-2-13"></a><span class="p">)</span>
-<a id="__codelineno-2-14" name="__codelineno-2-14"></a><span class="n">content</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">choices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">message</span><span class="o">.</span><span class="n">content</span>
-<a id="__codelineno-2-15" name="__codelineno-2-15"></a><span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
+<h3 id="closed-source-models">Closed Source Models<a class="headerlink" href="#closed-source-models" title="Permanent link">&para;</a></h3>
+<ul>
+<li>GPT from OpenAI</li>
+<li>Claude from Anthropic</li>
+<li>Gemini from Google</li>
+<li>Grok from x.ai</li>
+</ul>
+<h3 id="open-source-models">Open Source Models<a class="headerlink" href="#open-source-models" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Llama from Meta</li>
+<li>Mixtral from Mistral</li>
+<li>Qwen from Alibaba</li>
+<li>Phi from Microsoft</li>
+<li>Deepseek from Deepseek AI</li>
+</ul>
+<h2 id="three-ways-to-use-models">Three Ways to Use Models<a class="headerlink" href="#three-ways-to-use-models" title="Permanent link">&para;</a></h2>
+<ul>
+<li>User Interfaces</li>
+<li>Cloud APIs</li>
+</ul>
+<h3 id="user-interfaces">User Interfaces<a class="headerlink" href="#user-interfaces" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Like ChatGPT, Claude and Gemini UI.</li>
+</ul>
+<h3 id="cloud-apis">Cloud APIs<a class="headerlink" href="#cloud-apis" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Frameworks like LangChain.</li>
+<li>Managed AI Cloud Services</li>
+<li>Amazon Bedrock</li>
+<li>Google Vertex</li>
+<li>Azure ML</li>
+</ul>
 <hr />
 
 
@@ -1181,7 +1237,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../models/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Models">
+          <a href="../../setup/setup-openai/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setup OpenAI">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1191,20 +1247,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Models
+                Setup OpenAI
               </div>
             </div>
           </a>
         
         
           
-          <a href="../transformers/" class="md-footer__link md-footer__link--next" aria-label="Next: Transformers">
+          <a href="../chat-completions/" class="md-footer__link md-footer__link--next" aria-label="Next: Chat Completions">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Transformers
+                Chat Completions
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1265,7 +1321,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.icons", "navigation.tabs.scroll", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.icons", "navigation.tabs.scroll", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

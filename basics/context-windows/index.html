@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/core-concepts/parameters/">
+        <link rel="canonical" href="https://codebygk.github.io/learn-ai-fundamentals/basics/context-windows/">
       
       
-        <link rel="prev" href="../transformers/">
+        <link rel="prev" href="../tokens/">
       
       
-        <link rel="next" href="../tokens/">
+        <link rel="next" href="../llm-frameworks/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Parameters - Learn AI Fundamentals</title>
+        <title>Context Windows - Learn AI Fundamentals</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#parameters" class="md-skip">
+        <a href="#context-windows" class="md-skip">
           Skip to content
         </a>
       
@@ -113,7 +113,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Parameters
+              Context Windows
             
           </span>
         </div>
@@ -245,6 +245,8 @@
           
   
   
+    
+  
   Setup
 
         </a>
@@ -267,7 +269,9 @@
           
   
   
-  Core Concepts
+    
+  
+  Basics
 
         </a>
       </li>
@@ -286,6 +290,8 @@
         <a href="../../projects/projects/" class="md-tabs__link">
           
   
+  
+    
   
   Projects
 
@@ -381,6 +387,22 @@
   
   
     
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
     
     
     
@@ -639,6 +661,22 @@
   
     
     
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
     
     
       
@@ -664,7 +702,7 @@
   <span class="md-ellipsis">
     
   
-    Core Concepts
+    Basics
   
 
     
@@ -680,7 +718,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Core Concepts
+    Basics
   
 
           </label>
@@ -774,37 +812,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Parameters
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../parameters/" class="md-nav__link">
         
   
   
@@ -820,37 +831,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#model-parameters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Model Parameters
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -888,10 +868,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../context-windows/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Context Windows
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -907,6 +914,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#api-costs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        API Costs
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -954,6 +992,10 @@
   
   
     
+    
+      
+        
+      
     
     
     
@@ -1054,21 +1096,22 @@
   
 
 
-<h1 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h1>
-<p>Parameters are the learned numerical values that store an LLM's understanding of language.</p>
-<h2 id="model-parameters">Model Parameters<a class="headerlink" href="#model-parameters" title="Permanent link">&para;</a></h2>
+<h1 id="context-windows">Context Windows<a class="headerlink" href="#context-windows" title="Permanent link">&para;</a></h1>
 <ul>
-<li>GPT-1 - 117M</li>
-<li>GPT-2 - 1.5B</li>
-<li>Llama3.2 - 3B</li>
-<li>Llama3.1 - 8B</li>
-<li>Llama3.3 - 70B</li>
-<li>GPT-OSS - 120B</li>
-<li>GPT-3 - 175B</li>
-<li>DeepSeek -671B</li>
-<li>GPT-4 - 1.76T</li>
-<li>Latest Frontier Models - Undisclosed</li>
+<li>Maximum number of tokens that the model can consider when generating the next token.</li>
+<li>Context window is the key to decide how well a model can remember the context.</li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every call to LLM is stateless. We need to pass the entire conversation in the input prompt everytime, instead of just the current one. This gives the illusion of and LLM having a memory.</p>
+</div>
+<h2 id="api-costs">API Costs<a class="headerlink" href="#api-costs" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Chat interfaces have pro and monthly subscriptions. These are rate-limited but no per api call costs.</li>
+<li>APIs do not have subscriptions but charge per API call.</li>
+<li>The cost is based on the whole context including the input, output and follow-up questions. The whole chat is stacked up, sent and received with every api call to maintain context.</li>
+</ul>
+<p>To view live api costs of all models, visit <a href="https://vellum.ai/llm-leaderboard">LLM Leaderboard</a></p>
 <hr />
 
 
@@ -1105,7 +1148,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../transformers/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Transformers">
+          <a href="../tokens/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Tokens">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1115,20 +1158,20 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Transformers
+                Tokens
               </div>
             </div>
           </a>
         
         
           
-          <a href="../tokens/" class="md-footer__link md-footer__link--next" aria-label="Next: Tokens">
+          <a href="../llm-frameworks/" class="md-footer__link md-footer__link--next" aria-label="Next: LLM Frameworks">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Tokens
+                LLM Frameworks
               </div>
             </div>
             <div class="md-footer__button md-icon">
@@ -1189,7 +1232,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.icons", "navigation.tabs.scroll", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.icons", "navigation.tabs.scroll", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.footer", "navigation.indexes", "search.highlight", "search.suggest", "toc.integrate", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
