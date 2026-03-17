@@ -1,3 +1,332 @@
-.md-header__button.md-logo img {
-    border-radius: 0;
+/* =========================================================
+   Learn AI Fundamentals - Custom Styles
+   docs/assets/css/styles.css
+   ========================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* =========================================================
+   NAV TAB HOVER - deep purple, not blue
+   ========================================================= */
+.md-tabs__link:hover,
+.md-tabs__link:focus {
+    color: rgba(255, 255, 255, 0.9) !important;
+    opacity: 1 !important;
+}
+
+.md-tabs__link--active {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+.md-tabs__indicator {
+    background-color: #AFA9EC !important;
+}
+
+.md-nav__link--active {
+    color: #534AB7 !important;
+    font-weight: 500;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+    color: #AFA9EC !important;
+}
+
+.md-nav__link:hover {
+    color: #534AB7 !important;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+    color: #AFA9EC !important;
+}
+
+/* =========================================================
+   FONTS
+   ========================================================= */
+body,
+.md-typeset {
+    font-family: 'Inter', system-ui, sans-serif !important;
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+    font-weight: 400 !important;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5 {
+    font-family: 'Sora', system-ui, sans-serif !important;
+    letter-spacing: -0.4px;
+    font-weight: 600 !important;
+}
+
+.md-typeset code,
+.md-typeset pre {
+    font-family: 'Fira Code', monospace !important;
+    font-size: 0.88em !important;
+}
+
+/* =========================================================
+   HOMEPAGE - make the MkDocs shell stretch to fill viewport
+   so .ai-home can fill it completely.
+   All rules scoped to pages containing .ai-home so other
+   tabs are 100% unaffected.
+   ========================================================= */
+
+/* 1. Body must be full viewport height and use flex column */
+body:has(.ai-home) {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 2. The outer MkDocs shell (.md-container wraps main+footer) */
+body:has(.ai-home) .md-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. md-main fills remaining space between tabs and footer */
+body:has(.ai-home) .md-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 4. md-main__inner fills md-main */
+body:has(.ai-home) .md-main__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* 5. md-content fills md-main__inner */
+body:has(.ai-home) .md-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* 6. md-content__inner fills md-content */
+body:has(.ai-home) .md-content__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important;
+    margin: 0 !important;
+    max-width: 100% !important;
+    width: 100% !important;
+}
+
+/* 7. Hide auto-generated h1 from frontmatter title & edit button */
+body:has(.ai-home) .md-content__inner>h1,
+body:has(.ai-home) .md-content__button {
+    display: none !important;
+}
+
+.md-content__inner:before {
+    /* this is the auto-generated h1 from the frontmatter title - hide it */
+    display: none !important;
+}
+
+/* =========================================================
+   HERO - .ai-home fills the full flex column
+   ========================================================= */
+.ai-home {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    justify-content: center;
+    text-align: left;
+    padding: 96px 48px;
+    position: relative;
+    overflow: hidden;
+
+    background: linear-gradient(135deg, #EEEDFE 0%, #f0effe 55%, #e8f4ff 100%);
+}
+
+[data-md-color-scheme="slate"] .ai-home {
+    background: linear-gradient(135deg, #1e1b3a 0%, #1a1a2e 60%, #16213e 100%);
+}
+
+/* decorative blobs */
+.ai-home::before {
+    content: '';
+    position: absolute;
+    top: -80px;
+    right: -100px;
+    width: 440px;
+    height: 440px;
+    background: radial-gradient(circle, rgba(175, 169, 236, 0.28) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.ai-home::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -80px;
+    width: 380px;
+    height: 380px;
+    background: radial-gradient(circle, rgba(83, 74, 183, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+.ai-hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: white;
+    border: 1px solid rgba(83, 74, 183, 0.2);
+    border-radius: 20px;
+    padding: 5px 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #534AB7;
+    margin-bottom: 32px;
+    font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+}
+
+[data-md-color-scheme="slate"] .ai-hero__badge {
+    background: rgba(255, 255, 255, 0.07);
+    color: #AFA9EC;
+}
+
+.ai-hero__dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #22c55e;
+    flex-shrink: 0;
+    display: inline-block;
+}
+
+.ai-hero__heading {
+    font-family: 'Inter', system-ui, sans-serif !important;
+    font-size: 60px !important;
+    font-weight: 600 !important;
+    line-height: 1.08 !important;
+    color: #534AB7 !important;
+    margin: 0 0 24px !important;
+    letter-spacing: -0.04em !important;
+    border-bottom: none !important;
+    position: relative;
+    max-width: 760px;
+}
+
+[data-md-color-scheme="slate"] .ai-hero__heading {
+    color: #f0effe !important;
+}
+
+@media (max-width: 600px) {
+    .ai-hero__heading {
+        font-size: 40px !important;
+    }
+}
+
+.ai-hero__subtext {
+    font-size: 18px;
+    font-weight: 300;
+    color: #6b6b80;
+    line-height: 1.8;
+    max-width: 520px;
+    margin: 0 auto 44px;
+    font-family: 'Inter', system-ui, sans-serif;
+    position: relative;
+}
+
+[data-md-color-scheme="slate"] .ai-hero__subtext {
+    color: #9a97b5;
+}
+
+.ai-hero__actions {
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.ai-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none !important;
+    transition: opacity 0.15s, transform 0.1s;
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+.ai-btn:hover {
+    opacity: 0.88;
+    transform: translateY(-1px);
+}
+
+.ai-btn--primary {
+    background: #534AB7;
+    color: white !important;
+    border: none;
+}
+
+.ai-btn--outline {
+    background: white;
+    border: 1px solid rgba(83, 74, 183, 0.2);
+    color: #1a1a2e !important;
+}
+
+[data-md-color-scheme="slate"] .ai-btn--outline {
+    background: rgba(255, 255, 255, 0.06);
+    color: #e8e6f5 !important;
+}
+
+/* =========================================================
+   BACK TO TOP
+   ========================================================= */
+.md-top {
+    background: #534AB7 !important;
+    color: #ffffff !important;
+}
+
+.md-top svg {
+    fill: #ffffff !important;
+}
+
+/* =========================================================
+   DOCS PAGES
+   ========================================================= */
+.md-typeset .admonition,
+.md-typeset details {
+    border-radius: 8px;
+    border-left-width: 3px;
+}
+
+.md-typeset code:not(.highlight code) {
+    background: #EEEDFE;
+    color: #3C3489;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.85em;
+}
+
+[data-md-color-scheme="slate"] .md-typeset code:not(.highlight code) {
+    background: rgba(83, 74, 183, 0.25);
+    color: #CCC9F5;
 }

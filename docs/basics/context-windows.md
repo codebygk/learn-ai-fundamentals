@@ -2,7 +2,8 @@
 - Maximum number of tokens that the model can consider when generating the next token.
 - Context window is the key to decide how well a model can remember the context.
 
-**Note:** Every call to LLM is stateless. We need to pass the entire conversation in the input prompt everytime, instead of just the current one. This gives the illusion of and LLM having a memory.
+!!! note
+    Every call to LLM is stateless. We need to pass the entire conversation in the input prompt everytime, instead of just the current one. This gives the illusion of and LLM having a memory.
 
 
 ## API Costs

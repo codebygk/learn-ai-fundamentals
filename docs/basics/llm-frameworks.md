@@ -48,5 +48,6 @@ print(f"Output Tokens: {response.usage.completion_tokens}")
 print(f"Total Tokens: {response.usage.total_tokens}")
 print(f"Total Cost: {response._hidden_params["response_cost"]*100:.4f} cents")
 ```
-
-**Note:** Always add the questions or variable text at the end, to effectively enable cache as the initial text will remain the same in all requests.
+!!! note
+    Always add the questions or variable text at the end, to effectively enable cache as the initial text will remain the same in all requests.
+    

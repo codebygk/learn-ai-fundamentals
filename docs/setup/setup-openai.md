@@ -11,6 +11,6 @@
 - Click on **Create Secret Key** button.
 - Copy the secret key. The key should start with _sk-proj-_. This key needs to be updated in the environment file in the [01]
 
-Note: If you don't want to pay, switch over to free options such as [Ollama](../setup/setup-ollama.md).
-
+!!! note
+    If you don't want to pay, switch over to free options such as [Ollama](../setup/setup-ollama.md).
 ---

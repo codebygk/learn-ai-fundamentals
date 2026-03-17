@@ -27,12 +27,13 @@ theme:
     code: JetBrains Mono
   features:
     - navigation.tabs
-    - navigation.tabs.icons # must enable this
+    - navigation.tabs.icons
     - navigation.tabs.scroll
     - navigation.tabs.sticky
     - navigation.sections
     - navigation.top
     - navigation.footer
+    - navigation.indexes
     - search.highlight
     - search.suggest
     - toc.integrate
@@ -48,9 +49,10 @@ markdown_extensions:
   - pymdownx.highlight:
       linenums: true # this actually shows the numbers
       anchor_linenums: true # makes them clickable
+  - admonition
   - pymdownx.superfences
   - pymdownx.inlinehilite
-  - admonition
+  - pymdownx.details
   - toc:
       permalink: true
 

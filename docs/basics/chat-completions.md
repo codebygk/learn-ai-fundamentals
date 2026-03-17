@@ -5,7 +5,8 @@
   OPENAI_API_KEY=sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX
   ```
 
-  Note: Replace _sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX_ with your own key copied from [Setup OpenAI](../setup/setup-openai.md)
+!!! note
+    Replace _sk-proj-XXXXXXXXXXXXXXXXXXXXXXXXXXXX_ with your own key copied from [Setup OpenAI](../setup/setup-openai.md)
 
 
 ## With Requests
