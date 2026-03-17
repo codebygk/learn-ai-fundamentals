@@ -147,7 +147,7 @@ body:has(.ai-home) .md-content__button {
     gap: 36px;
     justify-content: center;
     text-align: left;
-    padding: 96px 48px;
+    padding: 5rem;
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #EEEDFE 0%, #f0effe 55%, #e8f4ff 100%);
@@ -179,8 +179,8 @@ body:has(.ai-home) .md-content__button {
     position: absolute;
     bottom: -100px;
     left: -80px;
-    width: 380px;
-    height: 380px;
+    width: 420px;
+    height: 420px;
     background: radial-gradient(circle, rgba(83, 74, 183, 0.12) 0%, transparent 70%);
     border-radius: 50%;
     pointer-events: none;
