@@ -27,13 +27,12 @@ theme:
     code: JetBrains Mono
   features:
     - navigation.tabs
-    - navigation.tabs.icons
-    - navigation.tabs.scroll
     - navigation.tabs.sticky
-    - navigation.sections
+    - navigation.expand 
     - navigation.top
     - navigation.footer
     - navigation.indexes
+    - navigation.tracking
     - search.highlight
     - search.suggest
     - toc.integrate
@@ -65,6 +64,9 @@ docs_dir: docs
 
 extra_css:
   - assets/css/styles.css
+
+extra_javascript:
+  - assets/js/nav-fix.js
 
 extra:
   generator: false
