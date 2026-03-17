@@ -419,3 +419,21 @@ body:has(.ai-home) .md-content__button {
 .ai-btn--primary {
     visibility: hidden;
 }
+
+/* =========================================================
+   MOBILE NAV - ensure nested items are visible
+   ========================================================= */
+@media screen and (max-width: 76.1875em) {
+    .md-nav--primary .md-nav__item--nested > .md-nav {
+        display: block !important;
+    }
+
+    .md-nav--primary .md-nav__item--nested > .md-nav__toggle:checked ~ .md-nav {
+        display: block !important;
+    }
+
+    /* Make sure all nav levels show on mobile */
+    .md-nav--primary .md-nav {
+        display: block !important;
+    }
+}
