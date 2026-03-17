@@ -28,11 +28,11 @@ theme:
   features:
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.expand 
+    - navigation.tracking
+    - navigation.prune
     - navigation.top
     - navigation.footer
     - navigation.indexes
-    - navigation.tracking
     - search.highlight
     - search.suggest
     - toc.integrate
