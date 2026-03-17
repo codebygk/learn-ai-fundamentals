@@ -150,8 +150,11 @@ body:has(.ai-home) .md-content__button {
     padding: 96px 48px;
     position: relative;
     overflow: hidden;
-
     background: linear-gradient(135deg, #EEEDFE 0%, #f0effe 55%, #e8f4ff 100%);
+}
+
+.ai-home .content {
+    width: 50%;
 }
 
 [data-md-color-scheme="slate"] .ai-home {
@@ -226,17 +229,10 @@ body:has(.ai-home) .md-content__button {
     letter-spacing: -0.04em !important;
     border-bottom: none !important;
     position: relative;
-    max-width: 760px;
 }
 
 [data-md-color-scheme="slate"] .ai-hero__heading {
     color: #f0effe !important;
-}
-
-@media (max-width: 600px) {
-    .ai-hero__heading {
-        font-size: 40px !important;
-    }
 }
 
 .ai-hero__subtext {
@@ -244,7 +240,6 @@ body:has(.ai-home) .md-content__button {
     font-weight: 300;
     color: #6b6b80;
     line-height: 1.8;
-    max-width: 520px;
     margin: 0 auto 44px;
     font-family: 'Inter', system-ui, sans-serif;
     position: relative;
@@ -295,6 +290,86 @@ body:has(.ai-home) .md-content__button {
 [data-md-color-scheme="slate"] .ai-btn--outline {
     background: rgba(255, 255, 255, 0.06);
     color: #e8e6f5 !important;
+}
+
+/* =========================================================
+   HERO - Mobile Responsive
+   ========================================================= */
+
+/* Tablet: reduce padding and font size */
+@media (max-width: 960px) {
+    .ai-home {
+        padding: 64px 32px;
+        gap: 24px;
+    }
+
+    .ai-home .content {
+        width: 100%;
+    }
+
+    .ai-hero__heading {
+        font-size: 48px !important;
+    }
+
+    .ai-home .image img {
+        width: 380px;
+        height: 380px;
+    }
+}
+
+/* Mobile: stack vertically, image below content */
+@media (max-width: 680px) {
+    .ai-home {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 48px 24px;
+        gap: 40px;
+    }
+
+    .ai-hero__heading {
+        font-size: 42px !important;
+        max-width: 100%;
+    }
+
+    .ai-hero__subtext {
+        font-size: 16px;
+        max-width: 100%;
+        margin: 0 0 32px;
+    }
+
+    .ai-hero__badge {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .ai-hero__actions {
+        justify-content: center;
+    }
+
+    .ai-home .image {
+        display: none;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 400px) {
+    .ai-home {
+        padding: 40px 16px;
+    }
+
+    .ai-hero__heading {
+        font-size: 36px !important;
+    }
+
+    .ai-hero__actions {
+        justify-content: center;
+    }
+
+    .ai-btn {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
 }
 
 /* =========================================================

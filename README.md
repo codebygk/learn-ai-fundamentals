@@ -26,5 +26,5 @@ Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, 
 - [Adversarial Conversation](/projects/adversarial-conversation/README.md)
 
 
-## Credits & Sources
-Inspired by Ed Donner's LLM Engineering course, along with my own learnings and implementations.
+## References
+Ed Donner's LLM Engineering course

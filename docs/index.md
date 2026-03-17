@@ -7,7 +7,7 @@ hide:
 <div class="ai-home">
   <div class="content">
     <div class="ai-hero__badge"><span class="ai-hero__dot"></span>Free · Open Source · No signup</div>
-    <h1 class="ai-hero__heading">AI Fundamentals,<br>explained clearly.</h1>
+    <h1 class="ai-hero__heading">Artificial Intelligence <br/>From Scratch.</h1>
     <p class="ai-hero__subtext">Learn Artificial Intelligence by building real LLM apps - then enhancing them with RAG, LoRA, and AI&nbsp;Agents.</p>
     <div class="ai-hero__actions">
       <a href="setup/setup-python/" class="ai-btn ai-btn--primary">Start Learning →</a>
