@@ -2,29 +2,28 @@
 Learn Artificial Intelligence by building LLM apps and enhancing them with RAG, LoRA and AI Agents.
 
 ## Setup
-- [Setup Python](/docs/setup/setup-python.md)
-- [Setup Git](/docs/setup/setup-git.md)
-- [Setup Cursor](/docs/setup/setup-cursor.md)
-- [Setup UV](/docs/setup/setup-uv.md)
-- [Setup Project](/docs/setup/setup-project.md)
-- [Setup Ollama](/docs/setup/setup-ollama.md)
-- [Setup OpenAI](/docs/setup/setup-openai.md)
+- [Setup Python](/docs/notes/setup/setup-python.md)
+- [Setup Git](/docs/notes/setup/setup-git.md)
+- [Setup Cursor](/docs/notes/setup/setup-cursor.md)
+- [Setup UV](/docs/notes/setup/setup-uv.md)
+- [Setup Project](/docs/notes/setup/setup-project.md)
+- [Setup Ollama](/docs/notes/setup/setup-ollama.md)
+- [Setup OpenAI](/docs/notes/setup/setup-openai.md)
 
 ## Core Concepts
-- [Models](/docs/core-concepts/models.md)
-- [Chat Completions](/docs/core-concepts/chat-completions.md)
-- [Transformers](/docs/core-concepts/transformers.md)
-- [Parameters](/docs/core-concepts/parameters.md)
-- [Tokens](/docs/core-concepts/tokens.md)
-- [Context Windows](/docs/core-concepts/context-windows.md)
-- [LLM Frameworks](/docs/core-concepts/llm-frameworks.md)
+- [Models](/docs/notes/basics/models.md)
+- [Chat Completions](/docs/notes/basics/chat-completions.md)
+- [Transformers](/docs/notes/basics/transformers.md)
+- [Parameters](/docs/notes/basics/parameters.md)
+- [Tokens](/docs/notes/basics/tokens.md)
+- [Context Windows](/docs/notes/basics/context-windows.md)
+- [LLM Frameworks](/docs/notes/basics/llm-frameworks.md)
 
 ## Projects
-- [Webpage Summarizer](/projects/webpage-summarizer/README.md)
-- [Webpage Brochurizer](/projects/webpage-brochurizer/README.md)
-- [Joker](/projects/joker/README.md)
-- [Adversarial Conversation](/projects/adversarial-conversation/README.md)
-
+- [Webpage Summarizer](https://github.com/codebygk/llm-projects/tree/main/webpage-summarizer)
+- [Webpage Brochurizer](https://github.com/codebygk/llm-projects/tree/main/webpage-brochurizer)
+- [Joker](https://github.com/codebygk/llm-projects/tree/main/joker)
+- [Adversarial Conversation](https://github.com/codebygk/llm-projects/tree/main/adversarial-conversation)
 
 ## References
 Ed Donner's LLM Engineering course
